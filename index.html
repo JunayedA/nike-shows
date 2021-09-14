@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <!-- css style  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="small-image">
+            <img src="img/nike-black-1.jpg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-green-1.jpeg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-off-green-1.jpeg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-red-1.jpeg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-smart-1.jpg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-white-1.jpg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-Joyride-1.jpeg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-pink-1.jpeg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-air-1.jpeg" alt="" onclick="displayImage(this)">
+            <img src="img/nike-air-max-1.jpeg" alt="" onclick="displayImage(this)">
+        </div>
+        <div class="big-image">
+            <img id="showImage" src="img/nike-black-1.jpg" alt="">
+        </div>
+    </section>
+    
+    <script>
+        const displayImage = (smallImage) =>{
+            const bigImage = document.getElementById('showImage');
+            bigImage.src = smallImage.src;
+        }
+    </script>
+</body>
+</html>

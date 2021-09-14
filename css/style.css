@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+}
+
+.small-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+.small-image img {
+  height: 92px;
+  display: block;
+  margin: 10px 0;
+  opacity: 0.5;
+}
+
+.small-image img:hover {
+  opacity: 1;
+}
+
+.big-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.big-image img {
+  height: 400px;
+  padding: 10px;
+}
